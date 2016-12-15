@@ -1,17 +1,36 @@
 /* GENERAL SETTINGS */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
-    background-color: #f9f9f9
+    background-color: green; /*#f9f9f9*/
 }
+
+.container {
+    background-color: #fff;
+    margin-left: 154px;
+    width: 1060px;
+    height: 950px;
+}
+
 
 /* HEADER */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+header {
+    margin-left: 46px;
+}
 
+.logo {
+    margin: 0px;
+    padding: 0px;
+    width: 50px;
+    height: 40px;
+}
 
-/* CONTAINER */
-.container {
-    background-color: #fff
+/* CONTENT */
+
+.description {
+    color: red;
 }
 
 
