@@ -8,6 +8,11 @@
         width: 966px;
 }
 
+.logo-box
+a:hover {
+  cursor: default;
+}
+
 .header__menu {
     /* Positioning */
     width: 966px;
