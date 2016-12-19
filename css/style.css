@@ -1,7 +1,15 @@
 /* GENERAL SETTINGS */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+body {
+    background-color: #f9f9f9;
+}
+
 /* HEADER */
+
+header {
+    /*position: relative;*/
+}
 
 .logo-box {
         height: 100px;
@@ -81,6 +89,27 @@ li:first-child:hover {
     cursor: default;
 }
 
+.left__sider {
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    float: left;
+    top: -8px;
+    background-color: #f9f9f9;
+    box-shadow: inset -4px 4px 8px -4px;
+
+}
+
+.right__sider {
+    width: 150px;
+    height: 100%;
+    margin-left: 1216px;
+    position: absolute;
+    float: right;
+    top: -4px;
+    background-color: #f9f9f9;
+    box-shadow: inset 4px 4px 8px -4px;
+}
 
 /* MAIN */
 main {
@@ -139,14 +168,21 @@ a {
   color: #2c2c2c;
 }
 
-.goods__img {
+.goods__img__box {
   margin-left: 44px;
   width: 682px;
   height: 400px;
   display: flex;
   border: 1px solid #c8c8c8;
-  background-image: url(img/image.png);
   text-align: center;
+  overflow: hidden;
+}
+
+.goods__img {
+    top: 50%;
+    left: 45%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 .description {
