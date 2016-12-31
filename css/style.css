@@ -1,229 +1,154 @@
-/* GENERAL SETTINGS */
+  /* GENERAL SETTINGS */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-/* HEADER */
-
-.logo-box {
-        height: 100px;
-        width: 966px;
+.container {
+  box-shadow: 0 4px 5px 0 #000;
+  height: 950px;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 1060px;
 }
 
-.logo-box
-a:hover {
-  cursor: default;
+  /* HEADER */
+.logo {
+  background-image: url("../img/logo.png");
+  height: 40px;
+  margin-left: 45px;
+  width: 145px;
 }
 
-.header__menu {
-    /* Positioning */
-    width: 966px;
-    margin-left: 200px;
-    padding: 0px 0px 0px 0px;
-    /* Display & Box Model */
-    /* Color */
-    background: linear-gradient(to top, #444343, #5e5e5e);
-    /* Text */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0px;
-    text-shadow: 1px 1px 2px #000;
-    /* Other */
-}
-
-.header__menu
-li {
-    padding: 15px 44px 15px 44px;
-    display: inline-flex;
-    font-size: 14px;
-}
-
-.header__menu
-li:first-child {
-  padding-left: 24px;
-}
-
-.header__menu
-li
-a {
-/* Хотел, чтобы ссылкой был весь блок меню, а не только текст*/
-    /*  display: block;
-      height: 100%; */
-
-      color: #fff;
-      text-decoration: none;
-      cursor: default;
-}
-
-/* a:visited {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:active {
-  color: #fff;
-  text-decoration: none;
-} */
-.header__menu
-li:hover {
-    margin: 0px 19px 0px 19px;
-    padding: 15px 24px 15px 24px;
-    background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-    border-left: 1px solid #838383;
-    border-right: 1px solid #838383;
-    cursor: default;
-}
-
-.header__menu
-li:first-child:hover {
-    margin: 0px 19px 0px 0px;
-    padding: 15px 24px 15px 23px;
-    background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-    border-left: 1px solid #838383;
-    border-right: 1px solid #838383;
-    cursor: default;
-}
-
-
-/* MAIN */
-main {
-  height: 680px;
+  /* NAV */
+nav {
+  background: linear-gradient(to top, #444343, #5e5e5e);
+  height: 40px;
+  margin-left: 46px;
+  margin-top: 40px;
   width: 966px;
-  margin-left: 200px;
-  background-color: #fff;
 }
 
-.goods__unit {
-  margin-top: 35px;
-  display: inline-flex;
-}
-
-.side__menu {
-  padding: 0px;
-  width: 240px;
-  display: flex;
-  flex-direction: column;
-}
-
-.side__menu
-li {
-  padding: 14px 216px 13px 24px;
-  border-bottom: 1px solid #c8c8c8;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+nav
+a {
+  color: #fff;
+  display: inline-block;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
   text-decoration: none;
+  text-shadow: 1px 1px 2px #000;
+  width: 100px;
+}
+
+nav
+a:first-child {
+  margin-left: 25px;
+}
+
+nav
+a:hover {
+  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+  box-shadow: 0 1px 1px 0 #fff;
+}
+
+  /* MAIN */
+main {
+  margin-left: 46px;
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+aside {
   border-left: 1px solid #c8c8c8;
   border-right: 1px solid #c8c8c8;
-}
-
-.side__menu
-li:first-child {
   border-top: 1px solid #c8c8c8;
+  float: left;
+  height: 240px;
+  width: 240px;
 }
 
-.side__menu
-li
+aside
 a {
-  text-decoration: none;
+  border-bottom: 1px solid #c8c8c8;
   color: #656363;
-  cursor: default;
-}
-
-.side__menu
-li:hover {
-  padding: 14px 204px 13px 36px;
-  background-color: #f9f9f9;
-  cursor: default;
-}
-
-.side__menu
-li
-a {
-  color: #2c2c2c;
-}
-
-.goods__img {
-  margin-left: 44px;
-  width: 682px;
-  height: 400px;
-  display: flex;
-  border: 1px solid #c8c8c8;
-  background-image: url(img/image.png);
-  text-align: center;
-}
-
-.description {
-  margin: 40px 74px 60px 84px;
-  text-align: left;
-  line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  display: block;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
-  color: #2c2c2c;
-}
-
-
-/* FOOTER */
-.footer__menu {
-    /* Positioning */
-    width: 966px;
-    margin-left: 200px;
-    padding: 0px 0px 0px 0px;
-    /* Display & Box Model */
-    /* Color */
-    background-color: #e1e1e1;
-    /* Text */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0px;
-    text-shadow: 1px 1px 2px #000;
-    /* Other */
-}
-
-.footer__menu
-li {
-    padding: 15px 44px 15px 44px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-size: 13px;
-}
-
-.footer__menu
-li:first-child {
-  padding-left: 24px;
-}
-
-.footer__menu
-li:last-child {
-  margin: 0px 0px 0px 240px;
-  padding: 15px 24px 15px 0px;
-  display: inline-flex;
-}
-
-.footer__menu
-li
-a {
-      color: #2c2c2c;
-      text-decoration: none;
-      cursor: default;
-}
-
-.footer__menu
-li:hover {
-    margin: 0px 20px 0px 20px;
-    padding: 15px 24px 15px 24px;
-    text-decoration: underline;
-    cursor: default;
-}
-
-.footer__menu
-li:first-child:hover {
-    margin: 0px 20px 0px 0px;
-    padding: 15px 24px 15px 24px;
-    text-decoration: underline;
-    cursor: default;
-}
-
-.footer__menu
-li:last-child:hover {
-  margin: 0px 0px 0px 240px;
-  padding: 15px 24px 15px 0px;
-  display: inline-flex;
+  line-height: 40px;
+  padding-left: 22px;
+  text-align: left;
   text-decoration: none;
+}
+
+aside
+a:hover {
+  color: #2c2b2b;
+  font-weight: bold;
+  padding-left: 35px;
+}
+
+.content {
+  height: 670px;
+  margin-left: 289px;
+  width: 678px;
+}
+
+img {
+  height: 307px;
+  width: 500px;
+}
+
+figure {
+  background: url("../img/image.png") no-repeat center;
+  border: 1px solid #c8c8c8;
+  display: block;
+  height: 400px;
+  text-align: center;
+  width: 678px;
+}
+
+.content
+p {
+  color: #000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+  margin: 39px 24px;
+}
+
+  /* FOOTER */
+
+footer {
+  background-color: #e1e1e1;
+  height: 40px;
+  margin-bottom: 60px;
+  margin-left: 46px;
+  width: 966px;
+}
+
+footer
+a {
+  color: #2c2c2c;
+  display: inline-block;
+  float: left;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 40px;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+footer
+a:hover {
+  text-decoration: underline;
+}
+
+footer
+p {
+  color: #2c2c2c;
+  float: right;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 40px;
+  margin-right: 26px;
 }
