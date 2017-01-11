@@ -3,17 +3,14 @@
 
 .container {
   box-shadow: 0 4px 5px 0 #000;
-  height: 950px;
   margin: 0 auto;
-  padding-top: 50px;
-  width: 1060px;
+  padding: 50px 48px 60px 46px;
+  width: 966px;
 }
 
   /* HEADER */
 .logo {
-  background-image: url("../img/logo.png");
   height: 40px;
-  margin-left: 45px;
   width: 145px;
 }
 
@@ -21,9 +18,12 @@
 nav {
   background: linear-gradient(to top, #444343, #5e5e5e);
   height: 40px;
-  margin-left: 46px;
   margin-top: 40px;
-  width: 966px;
+}
+
+nav
+li {
+    display: inline-block;
 }
 
 nav
@@ -36,12 +36,13 @@ a {
   text-align: center;
   text-decoration: none;
   text-shadow: 1px 1px 2px #000;
-  width: 100px;
+  margin: 0 11px;
+  padding: 0 25px;
 }
 
 nav
 a:first-child {
-  margin-left: 25px;
+  margin: 0 11px 0 0;
 }
 
 nav
@@ -52,7 +53,6 @@ a:hover {
 
   /* MAIN */
 main {
-  margin-left: 46px;
   margin-top: 40px;
   overflow: hidden;
   position: relative;
@@ -88,14 +88,8 @@ a:hover {
 }
 
 .content {
-  height: 670px;
-  margin-left: 289px;
+  float: right;
   width: 678px;
-}
-
-img {
-  height: 307px;
-  width: 500px;
 }
 
 figure {
@@ -104,7 +98,6 @@ figure {
   display: block;
   height: 400px;
   text-align: center;
-  width: 678px;
 }
 
 .content
@@ -120,10 +113,18 @@ p {
 
 footer {
   background-color: #e1e1e1;
+  overflow: hidden;
   height: 40px;
-  margin-bottom: 60px;
-  margin-left: 46px;
-  width: 966px;
+}
+
+footer
+ul {
+    float: left;
+}
+
+footer
+li {
+    display: inline-block;
 }
 
 footer
@@ -134,8 +135,14 @@ a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 40px;
-  margin-left: 25px;
   text-decoration: none;
+  margin: 0 11px;
+  padding: 0 25px;
+}
+
+footer
+a:first-child {
+  margin: 0 11px 0 0;
 }
 
 footer
@@ -150,5 +157,6 @@ p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 40px;
-  margin-right: 26px;
+  padding-right: 12px;
+  width: 157px;
 }
